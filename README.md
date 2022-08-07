@@ -1,2 +1,2 @@
-# blog
+# Blog
 Data Geoscience Blog
