@@ -19,6 +19,9 @@
     --foreground-tertiary: hsl(214, 20%, 69%);
 
     --accent: hsl(220, 47%, 37%);
+    --accent2: hsl(28, 45%, 54%);
+    --footer-text: hsl(0, 0%, 97%);
+
 
 }
 
@@ -39,6 +42,8 @@
     --foreground-tertiary: hsl(214, 20%, 69%);
 
     --accent: hsl(220, 47%, 37%);
+    --accent2: hsl(28, 45%, 54%);
+    --footer-text: hsl(0, 0%, 97%);
 
 }
 
@@ -210,8 +215,8 @@ html {
 }
 
 .btn-primary:hover {
-    background: var(--foreground-secondary);
-    color: var(--action-primary);
+    background: var(--accent2);
+    color: var(--footer-text);
 }
 
 .btn-secondary {
@@ -222,7 +227,7 @@ html {
 }
 
 .btn-secondary:hover {
-    border-color: var(--accent);
+    border-color: var(--accent2);
 }
 
 /*-----------------------------------*\ 
@@ -341,7 +346,7 @@ header .btn-group {
 }
 
 .mobile-nav .nav-link:hover {
-    color: var(--accent);
+    color: var(--accent2);
 }
 
 /*-----------------------------------*\ 
@@ -500,4 +505,100 @@ header .btn-group {
 
 .load-more:hover {
     background: var(--accent);
+}
+
+/*-----------------------------------*\ 
+  #ASIDE
+\*-----------------------------------*/
+
+.aside {
+    display: none;
+}
+
+/*-----------------------------------*\ 
+  #FOOTER
+\*-----------------------------------*/
+
+footer {
+    background: var(--accent);
+}
+
+footer .container {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+footer .wrapper {
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    color: var(--footer-text);
+    max-width: 300px;
+    margin-inline: auto;
+    margin: auto;
+    /* fallback for margin-inline */
+}
+
+.footer-title {
+    color: var(--footer-text);
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.footer-link {
+    color: var(--footer-text);
+}
+
+.footer-link:hover {
+    color: var(--footer-text);
+    text-decoration: underline;
+}
+
+.copyright {
+    color: var(--foreground-secondary);
+    font-size: var(--fs-4);
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid var(--action-primary);
+}
+
+.copyright a {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    color: var(--footer-text);
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.container-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.1em;
+}
+
+.container-social .icon-box {
+    width: 45px;
+    height: 45px;
+    color: var(--footer-text);
+}
+
+.container-social .icon-box:hover {
+    transition: 0.3s;
+    color: var(--accent2)
 }
