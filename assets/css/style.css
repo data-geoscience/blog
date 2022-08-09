@@ -289,7 +289,7 @@ header .btn-group {
 :is(.theme-btn-mobile,
     .nav-menu-btn,
     .nav-close-btn):hover {
-    background: var(--accent);
+    background: var(--accent2);
     color: var(--white);
 }
 
@@ -1062,9 +1062,7 @@ footer .wrapper {
    * FOOTER 
    */
 
-    .footer-title {
-        font-size: 1.125rem;
-    }
+
 
     .footer-link {
         margin-bottom: 0.3rem;
